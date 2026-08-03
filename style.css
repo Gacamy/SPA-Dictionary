@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    background-color: blue;
+    color: white;
+}
+
+text-align: center;
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+
+    main {
+        max-width: 600px;
+        margin: 20px;
+        padding: 0 15px;
+
+        #word-input {
+            width: 70%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid grey;
+            border-radius: 5px;
+
+            #search-form button {
+                padding: 10px 20px;
+                font-size: 1em;
+                border: none;
+                border-radius: 5px;
+                background-color: steelblue;
+                color: white;
+                cursor: pointer;
+            }
+
+            #search-form button {
+                background-color: darkblue;
+            }
+
+            #theme-btn {
+                margin: 10px 0 20px 0;
+                padding: 8px 14px;
+                border: 1px solid;
+                border-radius: 5px;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            #result-card {
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 1px solid lightgrey;
+            }
+
+            #word-title {
+                margin: 0;
+
+                #play-audio-btn {
+                    padding: 6px 12px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: lavender;
+                    cursor: pointer;
+                }
+
+                #save-btn {
+                    margin-top: 15px;
+                    padding: 8px 16px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: gold;
+                    cursor: pointer;
+
+                    body.dark-mode {
+                        background-color: black;
+                        color: white;
+                    }
