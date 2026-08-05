@@ -1,7 +1,4 @@
 // STEP 1: GRAB THE HTML ELEMENTS WE NEED TO WORK WITH
-// "document.getElementById" finds an element in the HTML
-// using its id="..." attribute, so we can read from it or
-// change it using JavaScript.
 
 const searchForm = document.getElementById("search-form");
 const wordInput = document.getElementById("word-input");
@@ -44,8 +41,6 @@ async function fetchWordData(word) {
     const data = await response.json();
     return data;
 }
-
-
 
 // STEP 3
 
@@ -98,9 +93,7 @@ function displayWordData(data) {
     resultCard.classList.remove("hidden");
 }
 
-
 // STEP 4:  ERROR MESSAGE
-// ==========================================================
 
 function showError(message) {
     resultCard.classList.add("hidden");
@@ -108,17 +101,11 @@ function showError(message) {
     errorMessage.classList.remove("hidden");
 }
 
-
-
 // STEP 5
-
-
 
 searchForm.addEventListener("submit", async function (event) {
 
-
     event.preventDefault();
-
 
     const word = wordInput.value.trim();
 
@@ -137,7 +124,6 @@ searchForm.addEventListener("submit", async function (event) {
 });
 
 
-
 // STEP 6
 playAudioBtn.addEventListener("click", function () {
 
@@ -148,13 +134,9 @@ playAudioBtn.addEventListener("click", function () {
     }
 });
 
-
-
 // STEP 7: HANDLE THE SAVE BUTTON BEING CLICKED
 
-
 saveBtn.addEventListener("click", function () {
-
 
     const listItem = document.createElement("li");
     listItem.textContent = currentWord;
@@ -163,13 +145,9 @@ saveBtn.addEventListener("click", function () {
     savedList.appendChild(listItem);
 });
 
-
-
 // STEP 8: DARK MODE BUTTON BEING CLICKED
 
-
 themeBtn.addEventListener("click", function () {
-
 
     const isDarkMode = document.body.classList.toggle("dark-mode");
 
