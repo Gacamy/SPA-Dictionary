@@ -72,7 +72,7 @@ function displayWordData(data) {
         synonymsText.textContent = "No synonyms available.";
     }
 
-    /
+    //
     currentAudioUrl = "";
 
     for (let i = 0; i < entry.phonetics.length; i++) {
